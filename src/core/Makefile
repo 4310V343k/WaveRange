@@ -18,7 +18,7 @@ endif
 all: wrappers
 
 wrappers: 
-	$(CXX) $(CXXSOURCES) $(CDNLFLAG) $(CPICFLAG) $(CXXFLAGS) 
+	$(CXX) -g $(CXXSOURCES) $(CDNLFLAG) $(CPICFLAG) $(CXXFLAGS) 
 	$(AR) rcs $(AUXDIR)libwaverange.a $(OBJECTC)
 	$(SHARELIB)
 .PHONY: clean
